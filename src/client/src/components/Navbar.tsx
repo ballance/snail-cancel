@@ -1,6 +1,6 @@
 import Nav from 'react-bootstrap/Nav';
 
-function BasicExample() {
+export default function Navbar() {
   return (
     <Nav
       activeKey="/home"
@@ -18,5 +18,3 @@ function BasicExample() {
     </Nav>
   );
 }
-
-export default BasicExample;

@@ -1,5 +1,5 @@
 # snail-cancel
-![snail logo](snail.png "Snail Logo")
+![snail logo](src/client/src/assets/images/snail.png "Snail Logo")
 
 Motivation
 ==========

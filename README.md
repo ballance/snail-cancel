@@ -1,4 +1,5 @@
 # snail-cancel
+![snail logo](snail.png "Snail Logo")
 
 Motivation
 ==========

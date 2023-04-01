@@ -1,4 +1,4 @@
-package it.ballance.snail;
+package it.ballance.snail.controllers;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -14,7 +14,7 @@ public class IndexController {
 
         @GetMapping("/")
         public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-            return "Hello " + name;
+            return "Hello " + name + "!";
         }
 
 }

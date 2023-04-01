@@ -11,12 +11,21 @@
 .mtj.tmp/
 
 # IntelliJ files
+<<<<<<< HEAD
 .idea
 
 # gradle files
 .gradle
 /build/
 
+=======
+.idea/
+
+# Gradle files
+.gradle/
+build/
+
+>>>>>>> b17c89f (updating gitignore)
 
 # Package Files #
 *.jar

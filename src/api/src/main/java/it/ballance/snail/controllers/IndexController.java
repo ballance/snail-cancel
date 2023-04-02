@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.time.LocalDateTime;
 import java.util.concurrent.atomic.AtomicLong;
 
 @RestController
@@ -14,7 +15,7 @@ public class IndexController {
 
         @GetMapping("/")
         public String greeting(@RequestParam(value = "name", defaultValue = "World") String name) {
-            return "Hello " + name + "!";
+            return "Hello " + name + " at " + LocalDateTime.now() + "!";
         }
 
 }

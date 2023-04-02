@@ -17,6 +17,28 @@ services:
       - '3306'
     volumes:
       - snail-db:/var/lib/mysql
+
+  app:
+    depends_on:
+      - db
+    build: ./src/api
+    restart: on-failure
+    env_file: ./.env
+    ports:
+      - 8080:8080
+      # - $SPRING_LOCAL_PORT:$SPRING_DOCKER_PORT
+    # environment:
+    #   # SPRING_APPLICATION_JSON: '{
+    #   #   "spring.datasource.url"  : "jdbc:mysql://mysqldb:$MYSQLDB_DOCKER_PORT/$MYSQLDB_DATABASE?useSSL=false",
+    #   #   "spring.datasource.username" : "$MYSQLDB_USER",
+    #   #   "spring.datasource.password" : "$MYSQLDB_ROOT_PASSWORD",
+    #   #   "spring.jpa.properties.hibernate.dialect" : "org.hibernate.dialect.MySQL5InnoDBDialect",
+    #   #   "spring.jpa.hibernate.ddl-auto" : "update"
+    #   # }'
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
 # Names our volume
 volumes:
   snail-db:

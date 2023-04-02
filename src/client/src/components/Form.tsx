@@ -7,7 +7,10 @@ type Inputs = {
 
 export default function Form() {
   const { register, handleSubmit, watch, formState: { errors } } = useForm<Inputs>();
-  const onSubmit: SubmitHandler<Inputs> = data => console.log('submitted: ' + data.firstName + ' ' + data.lastName);
+  const onSubmit: SubmitHandler<Inputs> = data => {
+    console.log('submitted: ' + data.firstName + ' ' + data.lastName);
+  }
+
 
 //   console.log(watch("firstName"))
 //   console.log(watch("lastName")) 

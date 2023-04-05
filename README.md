@@ -21,7 +21,7 @@ It's a pain to cancel a service such as internet, credit card, etc.  There's not
 
 Demo Environment
 ================
-Coming soon...
+http://snail.ballance.it.s3-website-us-east-1.amazonaws.com/
 
 Quick Start
 ===========
